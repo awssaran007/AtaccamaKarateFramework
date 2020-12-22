@@ -4,7 +4,7 @@ Feature: Validate division
   Background:
     * def operationURL = 'http://localhost:8080/qa_testCalc_java11/restWS/divide'
     * def testDataInput = read('classpath:'+'resources/data/InputTestData.json')
-    * def performDivision =  function(op1,op2){return int(op1)/op2 }
+    * def performDivision =  function(op1,op2){return Math.floor(op1/op2) }
 
 
   @common-scenarios
