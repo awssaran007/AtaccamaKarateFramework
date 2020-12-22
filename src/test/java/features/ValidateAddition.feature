@@ -1,15 +1,15 @@
-
+@addition
 Feature: Validate addition
 
   Background:
     * def operationURL = 'http://localhost:8080/qa_testCalc_java11/restWS/add'
-    * def testDataInput = read('classpath:'+'resources/data/Addition/InputTestData.json')
+    * def testDataInput = read('classpath:'+'resources/data/InputTestData.json')
     * def performAdd = function(op1,op2){return op1 + op2}
 
 
   @common-scenarios
-  Scenario: Validate common scenarios for addition
-    * call read('classpath:features/common/CommonValidations.feature') {operationURL:'#(operationURL)'}
+  Scenario: Validate common scenarios for addition via get call
+    * call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'}
 
 
 

@@ -20,7 +20,7 @@ class FeatureRunner {
     Karate testFeature() {
         System.setProperty("tags", "@add+~@ignore");
         System.setProperty("karate.env","qa");
-        return Karate.run("classpath:features/Addition.feature").relativeTo(getClass());
+        return Karate.run("classpath:features/").relativeTo(getClass());
     }
 
 }
