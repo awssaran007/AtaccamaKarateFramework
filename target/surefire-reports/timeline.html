@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-4"},{"id":2,"content":"ForkJoinPool-1-worker-5"},{"id":3,"content":"ForkJoinPool-1-worker-2"},{"id":4,"content":"ForkJoinPool-1-worker-3"},{"id":5,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"ValidateDivisionGetAPI[1:11]","start":3312,"end":6940,"title":"ValidateDivisionGetAPI[1:11] 05:30:03.312-05:30:06.940 Validate common scenarios for division via get call"},{"id":2,"group":2,"content":"ValidateDivisionGetAPI[2:15]","start":7022,"end":7074,"title":"ValidateDivisionGetAPI[2:15] 05:30:07.022-05:30:07.074 Validate division with two int values (happy path)"},{"id":3,"group":3,"content":"ValidateDivisionGetAPI[3:25]","start":7157,"end":7189,"title":"ValidateDivisionGetAPI[3:25] 05:30:07.157-05:30:07.189 Validate division with two negative values"},{"id":4,"group":4,"content":"ValidateDivisionGetAPI[4:33]","start":7036,"end":7080,"title":"ValidateDivisionGetAPI[4:33] 05:30:07.036-05:30:07.080 Validate division with one positive and negative values"},{"id":5,"group":1,"content":"ValidateDivisionGetAPI[5:43]","start":7087,"end":7121,"title":"ValidateDivisionGetAPI[5:43] 05:30:07.087-05:30:07.121 Validate division with zero"},{"id":6,"group":5,"content":"ValidateDivisionPOSTAPI[1:13]","start":3311,"end":7035,"title":"ValidateDivisionPOSTAPI[1:13] 05:30:03.311-05:30:07.035 Validate common scenarios for division via get call"},{"id":7,"group":2,"content":"ValidateDivisionPOSTAPI[2:18]","start":3311,"end":6653,"title":"ValidateDivisionPOSTAPI[2:18] 05:30:03.311-05:30:06.653 Validate division with two int values (happy path)"},{"id":8,"group":3,"content":"ValidateDivisionPOSTAPI[3:30]","start":3311,"end":6657,"title":"ValidateDivisionPOSTAPI[3:30] 05:30:03.311-05:30:06.657 Validate division with two negative values"},{"id":9,"group":4,"content":"ValidateDivisionPOSTAPI[4:40]","start":3311,"end":6662,"title":"ValidateDivisionPOSTAPI[4:40] 05:30:03.311-05:30:06.662 Validate division with ONE negative and ONE Positive value"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

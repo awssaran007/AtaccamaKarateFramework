@@ -2,8 +2,8 @@
 Feature: Validate subtraction
 
   Background:
-    * def operationURL = 'http://localhost:8080/qa_testCalc_java11/restWS/subtract'
-    * def testDataInput = read('classpath:'+'resources/data/InputTestData.json')
+    * def operationURL = baseUrl + '/subtract'
+    * def testDataInput = read('classpath:'+'resources/InputTestData.json')
     * def performSubtraction = function(op1,op2){return op1 - op2}
 
 
@@ -30,5 +30,13 @@ Feature: Validate subtraction
     When method get
     Then status 200
     And match $.result == performSubtraction(testDataInput[1].operand1,testDataInput[1].operand2)
+
+  Scenario: Validate addition with ONE negative and ONE Positive value
+    Given url operationURL
+    And param val1 = testDataInput[0].operand1
+    And param val2 = testDataInput[1].operand2
+    When method get
+    Then status 200
+    And match $.result == performSubtraction(testDataInput[0].operand1,testDataInput[1].operand2)
 
 

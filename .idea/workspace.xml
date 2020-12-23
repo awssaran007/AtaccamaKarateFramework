@@ -23,27 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08775f7b-4988-4640-bc73-4a9add30dccc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Addition.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/ValidateAddition.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Substraction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/ValidateSubstraction.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/commons/CommonValidations.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/data/Addition/InputTestData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/ExamplesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/ValidateAddition.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/ValidateAdditionGetAPI.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/ValidateDivision.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/ValidateDivisionGetAPI.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/ValidateMultiplication.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/ValidateMultiplicationGetAPI.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/ValidateSubstraction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/ValidateSubstractionGetAPI.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/commons/CommonValidationsViaGet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/commons/CommonValidationsViaGet.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karate-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karate-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/data/InputTestData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/InputTestData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/FeatureRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/FeatureRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/main.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/features.Addition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Addition.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Substraction.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/commons/CommonValidations.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/data/Addition/InputTestData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/ExamplesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/FeatureRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/FeatureRunner.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,25 +69,28 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\resources\data" />
+      <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\resources" />
+      <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\features" />
       <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\runner" />
+      <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\resources\data" />
       <recent name="C:\dev\AtaccamaAPITestFramework" />
-      <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\features" />
+      <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\resources" />
+      <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\features\commons" />
       <recent name="C:\dev\AtaccamaAPITestFramework\src\test\java\features\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ValidateMultiplication">
-    <configuration name="Feature: ValidateDivision" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FeatureRunner">
+    <configuration name="Feature: ValidateAdditionGetAPI" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateDivision.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateAdditionGetAPI.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="AtaccamaAPITestFramework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: ValidateDivision" />
+      <option name="SUGGESTED_NAME" value="Feature: ValidateAdditionGetAPI" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -109,14 +102,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: ValidateMultiplication" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: ValidateAdditionPOSTAPI" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateMultiplication.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateAdditionPOSTAPI.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="AtaccamaAPITestFramework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: ValidateMultiplication" />
+      <option name="SUGGESTED_NAME" value="Feature: ValidateAdditionPOSTAPI" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -128,15 +121,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: validate division with two int values (happy path)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Validate addition with two int values (happy path)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateDivision.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateAdditionPOSTAPI.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="AtaccamaAPITestFramework" />
-      <option name="NAME_FILTER" value="^validate division with two int values \(happy path\)$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^validate division with two int values \(happy path\)$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: validate division with two int values (happy path)" />
+      <option name="NAME_FILTER" value="^Validate addition with two int values \(happy path\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Validate addition with two int values \(happy path\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate addition with two int values (happy path)" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -148,53 +141,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: validate division with two negative values" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateDivision.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+    <configuration name="FeatureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AtaccamaAPITestFramework" />
-      <option name="NAME_FILTER" value="^validate division with two negative values$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^validate division with two negative values$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: validate division with two negative values" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.FeatureRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: validate multiplication with zero" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ValidateMultiplication.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+    <configuration name="FeatureRunner.testRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AtaccamaAPITestFramework" />
-      <option name="NAME_FILTER" value="^validate multiplication with zero$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^validate multiplication with zero$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: validate multiplication with zero" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.FeatureRunner" />
+      <option name="METHOD_NAME" value="testRunner" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: ValidateMultiplication" />
-        <item itemvalue="Cucumber Java.Scenario: validate multiplication with zero" />
-        <item itemvalue="Cucumber Java.Feature: ValidateDivision" />
-        <item itemvalue="Cucumber Java.Scenario: validate division with two int values (happy path)" />
-        <item itemvalue="Cucumber Java.Scenario: validate division with two negative values" />
+        <item itemvalue="JUnit.FeatureRunner" />
+        <item itemvalue="JUnit.FeatureRunner.testRunner" />
+        <item itemvalue="Cucumber Java.Feature: ValidateAdditionGetAPI" />
+        <item itemvalue="Cucumber Java.Feature: ValidateAdditionPOSTAPI" />
+        <item itemvalue="Cucumber Java.Scenario: Validate addition with two int values (happy path)" />
       </list>
     </recent_temporary>
   </component>
@@ -222,32 +206,37 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608663531944">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608755748144">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1608663531944" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1608755748144" />
+    <state x="371" y="134" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608721596510">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="134" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.689@0.0.1280.689" timestamp="1608721596510" />
     <state x="509" y="95" key="EnvironmentVariablesDialog" timestamp="1608663524466">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="509" y="95" key="EnvironmentVariablesDialog/0.0.1280.689@0.0.1280.689" timestamp="1608663524466" />
-    <state width="1237" height="234" key="GridCell.Tab.0.bottom" timestamp="1608666719951">
+    <state width="1237" height="190" key="GridCell.Tab.0.bottom" timestamp="1608758265156">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="234" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1608666719951" />
-    <state width="1237" height="234" key="GridCell.Tab.0.center" timestamp="1608666719951">
+    <state width="1237" height="190" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1608758265156" />
+    <state width="1237" height="190" key="GridCell.Tab.0.center" timestamp="1608758265156">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="234" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1608666719951" />
-    <state width="1237" height="234" key="GridCell.Tab.0.left" timestamp="1608666719951">
+    <state width="1237" height="190" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1608758265156" />
+    <state width="1237" height="190" key="GridCell.Tab.0.left" timestamp="1608758265156">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="234" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1608666719951" />
-    <state width="1237" height="234" key="GridCell.Tab.0.right" timestamp="1608666719951">
+    <state width="1237" height="190" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1608758265156" />
+    <state width="1237" height="190" key="GridCell.Tab.0.right" timestamp="1608758265156">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="234" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1608666719951" />
+    <state width="1237" height="190" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1608758265156" />
     <state width="1237" height="208" key="GridCell.Tab.1.bottom" timestamp="1608650026715">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -264,9 +253,18 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1608650026715" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1608709870969">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.689@0.0.1280.689" timestamp="1608709870969" />
     <state x="297" y="153" key="run.anything.popup" timestamp="1608664880032">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1608664880032" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AtaccamaAPITestFramework$FeatureRunner_testRunner.ic" NAME="FeatureRunner.testRunner Coverage Results" MODIFIED="1608744436836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>runner.*</FILTER>
+    </SUITE>
   </component>
 </project>

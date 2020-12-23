@@ -1,0 +1,150 @@
+02:51:41.328 karate.env system property was: qa 
+02:51:41.962 [print] {
+  "operation": "div",
+  "val1": 3,
+  "val2": 4
+}
+
+02:51:45.009 [print] {
+  "operation": "div",
+  "val1": 3,
+  "val2": 4
+}
+
+02:51:45.060 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+02:51:45.113 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+02:51:45.114 [print] {
+  "operation": "div",
+  "val1": 3,
+  "val2": 4
+}
+
+02:51:45.115 [print] {
+  "operation": "div",
+  "val1": 3,
+  "val2": 4
+}
+
+02:51:45.124 status code was: 200, expected: 404, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+02:51:45.144 [print] {
+  "operation": "div",
+  "val1": 3.8,
+  "val2": 4.9
+}
+
+02:51:45.157 status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+02:51:45.240 [print] {
+  "operation": "div",
+  "val1": "a",
+  "val2": 5
+}
+
+02:51:45.313 [print] {
+  "operation": "div",
+  "val1": " ",
+  "val2": " "
+}
+
+02:51:45.325 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+02:51:45.326 status code was: 500, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> java.lang.ArithmeticException: &#47; by zero</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>javax.servlet.ServletException: java.lang.ArithmeticException: &#47; by zero
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Root Cause</b></p><pre>java.lang.ArithmeticException: &#47; by zero
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)
+	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)
+	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)
+	sun.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.61</h3></body></html>
+02:51:45.337 [print] {
+  "operation": "div",
+  "val1": 3,
+  "val2": 7
+}
+
+02:51:45.343 status code was: 200, expected: 404, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+02:51:45.356 [print] {
+  "operation": "mod",
+  "val1": 3,
+  "val2": 4
+}
+
+02:51:45.367 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+02:51:45.377 [print] {
+  "operation": null,
+  "val1": 3,
+  "val2": 4
+}
+
+02:51:45.391 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+02:51:45.396 feature call failed: classpath:features/commons/CommonValidationsViaPost.feature
+arg: {"payLoadReq":{"operation":null,"val1":3,"val2":4}}
+[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 500, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> java.lang.ArithmeticException: &#47; by zero</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>javax.servlet.ServletException: java.lang.ArithmeticException: &#47; by zero
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Root Cause</b></p><pre>java.lang.ArithmeticException: &#47; by zero
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)
+	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)
+	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)
+	sun.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.61</h3></body></html>
+CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}

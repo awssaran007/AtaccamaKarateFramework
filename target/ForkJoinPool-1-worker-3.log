@@ -1,0 +1,12 @@
+02:51:41.317 karate.env system property was: qa 
+02:51:45.394 karate.env system property was: qa 
+02:47:54.206 [print] {
+  "operation": "mul",
+  "val1": 5,
+  "val2": 4
+}
+
+02:47:54.213 [print] {
+  "result": 20
+}
+
