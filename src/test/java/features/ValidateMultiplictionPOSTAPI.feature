@@ -24,7 +24,7 @@ Feature: Validate multiplication
     When method post
     Then status 200
     Then print response
-    And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2)
+    And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[0].operand2)
 
 
   Scenario: Validate multiplication with two negative values
@@ -34,7 +34,7 @@ Feature: Validate multiplication
     And request payLoad
     When method post
     Then status 200
-    And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2)
+    And match $.result == performMultiply(testDataInput[1].operand1,testDataInput[1].operand2)
 
 
   Scenario: Validate multiplication with ONE negative and ONE Positive value
@@ -44,6 +44,6 @@ Feature: Validate multiplication
     And request payLoad
     When method post
     Then status 200
-    And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[1].operand2)
+    And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[1].operand2)
 
 

@@ -18,37 +18,22 @@ import java.util.List;
 class FeatureRunner {
 
 
-    /***to run command line
-     * mvn test -Dtest=CatsRunner
-     *
+    /****
      * Below example explains different way in which tags can be supported -
      * @tag1,@tag2 - anyOf('@tag1','@tag2')
      * @tag1+@tag2 - anyOf('@tag1') && anyOf('@tag2')
      * @tag1+@tag2+~tag3 - anyOf('@tag1') && anyOf('@tag2') && not('tag3')
      * @tag1,@tag2+~tag3 - anyOf('@tag1','@tag2') && not('tag3')
-     *
-     *    @Karate.Test
-     *     Karate testTags() {
-     *         return Karate.run("tags").tags("@second").relativeTo(getClass());
-     *
-     *         mvn test -Dtest=SampleTest#testTags
-     *         mvn test "-Dkarate.options=--tags ~@ignore" -Dtest=AnimalsTest
-     *
-     *         @KarateOptions(features = "classpath:animals/cats", tags = "~@ignore")
-     * // this will run all feature files in 'animals/cats'
-     * // except the ones tagged as @ignore
-     */
+     ****/
 
     @Test
     public void testRunner() {
         System.setProperty("karate.env", "qa");
         Results results = Runner.path("classpath:features").tags("@division").parallel(5);
-        // Karate.run("classpath:features").tags("@addition").relativeTo(getClass());
-        System.out.println("Total features run: " + results.getFeatureCount());
+        System.out.println("Total features running: " + results.getFeatureCount());
         System.out.println("Total scenario run: " + results.getScenarioCount());
         System.out.println("Total failed scenario : " + results.getFailCount());
         generateReport(results.getReportDir());
-
     }
 
 
