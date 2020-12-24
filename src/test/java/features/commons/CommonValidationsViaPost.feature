@@ -5,8 +5,6 @@ Feature: validates the common features of an api response
   * def baseUrlCompute = baseUrl +'/compute'
   
 
-
-
   Scenario: Validate response schema
   #Validate response schema '
     Given url baseUrlCompute
@@ -30,7 +28,7 @@ Feature: validates the common features of an api response
 
 
   @bugs-scenario
-  Scenario Outline: Validate request body parameters
+  Scenario: Validate request body parameters
    #Validate two mandatory operands - not providing any parameter - should return bad request
     Given url baseUrlCompute
     And request {}
@@ -39,6 +37,7 @@ Feature: validates the common features of an api response
     Then status 500
 
 
+    Scenario: Validate two mandatory operands - providing just first operand - should return bad request'
    #Validate two mandatory operands - providing just first operand - should return bad request'
     Given url baseUrlCompute
     * payLoadReq.val1 = <operand1>
@@ -47,7 +46,7 @@ Feature: validates the common features of an api response
     When method post
     Then status 404
 
-
+    Scenario: Validate two mandatory operands - providing just second operand - should return bad request'
     #Validate two mandatory operands - providing just second operand - should return bad request'
     Given url baseUrlCompute
     * payLoadReq.val2 = <operand2>
@@ -55,11 +54,6 @@ Feature: validates the common features of an api response
     And request payLoadReq
     When method post
     Then status 404
-
-
-    Examples:
-      |operand1 |operand2 |
-      |     3   |    4    |
 
 
   @bug-scenario
@@ -79,6 +73,21 @@ Feature: validates the common features of an api response
       |    3.8 |  4.9   | float  |
       |   "a"  |  5     | string |
       |   " "  |  " "   | empty  |
+      |   +    |  +     | specialchar |
+
+
+
+  @bugs-scenario
+  Scenario: Validate additional values as query parameters are not allowed
+   # 'Validate additional values as query parameters are not allowed'
+    Given url baseUrlCompute
+    * payLoadReq.val1 = 3
+    * payLoadReq.val2 = 4
+    * payLoadReq.val3 = 7
+    * print payLoadReq
+    And request payLoadReq
+    When method post
+    Then status 400
 
   @bugs-scenario
   Scenario: Validate redundant values as query parameters are not allowed
@@ -90,7 +99,7 @@ Feature: validates the common features of an api response
     * print payLoadReq
     And request payLoadReq
     When method post
-    Then status 404
+    Then status 400
 
 
   Scenario: Validate incorrect operation is provided
@@ -104,6 +113,7 @@ Feature: validates the common features of an api response
     When method post
     * match response contains 'Unknown operation: mod'
 
+
   Scenario: Validate operation as null is provided
    # Validate incorrect operation
     Given url baseUrlCompute
@@ -114,6 +124,8 @@ Feature: validates the common features of an api response
     And request payLoadReq
     When method post
   * match response contains 'Operation must not be null!'
+
+
 
 
 
