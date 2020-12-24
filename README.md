@@ -7,7 +7,8 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 
 2. Use intellij for the effortless working.
 
-3. git clone the repository and perform maven clean install to download the karate related dependencies.
+3. git clone the repository and perform maven clean install to download the karate related dependencies and create the target folder freshly. 
+[Note:] - Target folder is not deleted over here just in case, you need to view the reorts directly from git.
 
 4. ** To run a feature file src/test/java/runner/FeatureRunner.runner file is used**
 
