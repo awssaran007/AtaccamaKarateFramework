@@ -1,7 +1,7 @@
 # AtaccamaKarateFramework
 This framework is based on Karate DSL which is performing testing on the REST API as provided in the application.
 
-Project Structure -
+Few guidelines -
 1. The validation scenarios as per each operation are provided in their corresponding feature file.
 eg: Addition via GET api - ValidateAdditionGetAPI.feature
     Addition via POST api - ValidateAdditionPOSTAPI.feature
