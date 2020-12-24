@@ -15,9 +15,9 @@ This framework is based on Karate DSL which is performing testing on the REST AP
   
   b) To run  a particular feature file-
   
-    i)  using the tag, update the tag in this line -  `Runner.path("classpath:features").tags("@addition").parallel(5);`
+   i)using the tag, update the tag in this line -  ` Runner.path("classpath:features").tags("@addition").parallel(5); `
     
-    ii) using the feature name, update file name in the path method - `Runner.path("classpath:features/ValidateAdditionGetAPI.feature").parallel(5);`
+   ii)using the feature name, update file name in the path method - ` Runner.path("classpath:features/ValidateAdditionGetAPI.feature").parallel(5); `
 
 
 
