@@ -3,7 +3,7 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 
 #####Few repository related guidelines -
 
-1. Java version should be 1.8 and above.
+1. Java version should be 8 and above.
 
 2. Use intellij for the effortless working.
 
