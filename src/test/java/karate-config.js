@@ -14,7 +14,7 @@ function fn() {
     // e.g. config.foo = 'bar';
   } else if (env == 'qa') {
     config.baseUrl = "http://localhost:8080/qa_testCalc_java11/restWS"
-
+    karate.configure('connectTimeout', 60000);
   }
   return config;
 }
