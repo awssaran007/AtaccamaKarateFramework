@@ -19,9 +19,12 @@ eg: Addition via GET api - ValidateAdditionGetAPI.feature
 
 6.****** To run a feature file src/test/java/runner/FeatureRunner.runner file is used*******
 
-  a) Test method testRunner() is run
-  b) To run  a particular feature file
+  a) Test method testRunner() is run.
+  
+  b) To run  a particular feature file-
+  
     i)  using the tag, update the tag in this line -  Runner.path("classpath:features").tags("@addition").parallel(5);
+    
     ii) using the feature name, update file name in the path method - Runner.path("classpath:features/ValidateAdditionGetAPI.feature").parallel(5);
 
 
