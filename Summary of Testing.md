@@ -1,1 +1,1 @@
-# Approach towards testing the Ataccama Calculator
+# My approach towards testing the Ataccama Calculator
