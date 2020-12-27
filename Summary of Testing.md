@@ -1,7 +1,8 @@
 ## My approach towards testing the Ataccama Calculator
 ---
 ###Technology used
-1. Karate DSL used for REST API testing, as API testing can help us perform far more indepth negative testing than UI.
+1. Karate DSL used for REST API testing, for indepth testing due to it's DSL built specifically for API testing.
+
 2. Approach to testing is broadly categorised into two parts - Positive areas and negative areas
 
 | **Positive areas**          |**Description**                                                           |
