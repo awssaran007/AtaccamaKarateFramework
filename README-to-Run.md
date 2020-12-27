@@ -22,7 +22,7 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 
 5. to run from maven use command `mvn test`
 
-
+6. tags used here are @multiplication,@addition,@subtract,@division
 
 ## Few project structure related guidelines -
 
