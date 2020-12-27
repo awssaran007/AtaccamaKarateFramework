@@ -15,6 +15,7 @@
 |-----------------------------|--------------------------------------------------------------------------|
 |**Schema validation**        | 1. Response schema returns all mandatory fields.                         | 
 |                             | 2. Mandatory request parameters are provided. i.e not null, not empty.   |
+|                             | 3. Invalid URL endpoint.                                                 |
 |**Illegal values**           | 1. Operation with Invalid data types eg: float, string, Sp chars         |
 |                             | 2. More than two parameters whether redundant or additional.             |
 |                             | 3.When operation  is null  or invalid i.e other than the provided four.  |
