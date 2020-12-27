@@ -22,9 +22,9 @@
 | cases**                     |                                                                          |
 ---
 
-- There is a feature file for each operation viz. addition, subtraction, multiplication adn division.
+- There is a feature file for each operation viz. addition, subtraction, multiplication and division.
 - Validations are done seperately for POST and Get calls
-- The scenario category of schema validation and illegal values are commmon for all the operations hence, I have abstracted them in one common file viz.
+- The scenario category of schema validation and illegal values are common for all the operations hence, I have abstracted them in one common file viz.
   **commons/CommonValidationsViaGet.feature**
   **commons/CommonValidationsViaPost.feature** 
 - These features are called by each opearation specific features once - **ValidateAdditionGetAPI.feature , "ValidateAdditionPOSTAPI.feature"** etc
