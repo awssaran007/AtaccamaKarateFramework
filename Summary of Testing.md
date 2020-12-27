@@ -6,16 +6,18 @@
 
 | **Positive areas**          |**Description**                                                           |
 |-----------------------------| -------------------------------------------------------------------------|
-| Broadly includesHappy       | 1. Operation with two positive values                                    |
+| Broadly includesHappy       | 1. Operation with two positive values.                                   |
 | path scenarios              | 2. Operation with positive and negative values.                          |
+| idempotency                 | 3. Operation produces same result when called over again and again.
 ---
 | **Negative Scenarios**      |**Description**                                                           |
 |-----------------------------|--------------------------------------------------------------------------|
-|**Schema validation**        | 1. Response schema returns all mandatory fields                          |
-|                             | 2. Mandatory request parameters are provided. i.e not null, not empty    |
-|**Illegal values**           | 1. Operation with Invalid data types eg: float, string                   |
-|                             | 2. More than two parameters whether redundant or additional              |
-|                             | 3. When operation  is null  or invalid i.e other than the provided four. |
+|**Schema validation**        | 1. Response schema returns all mandatory fields.                         | 
+|                             | 2. Mandatory request parameters are provided. i.e not null, not empty.   |
+|**Illegal values**           | 1. Operation with Invalid data types eg: float, string.                  |
+|                             | 2. More than two parameters whether redundant or additional.   
+|                             | 3. Special characters.
+|                             | 4. When operation  is null  or invalid i.e other than the provided four. |
 |**Operation specific edge    | 1. Division and Multiplication with zero                                 |               
 | cases**                     |                                                                          |
 ---
