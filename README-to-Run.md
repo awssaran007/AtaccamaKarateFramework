@@ -15,12 +15,12 @@ This framework is based on Karate DSL which is performing testing on the REST AP
   
   b) To run  a particular feature file-
   
-   i)using the tag, update the tag in this line -  ` Runner.path("classpath:features").tags("@addition").parallel(5); `
+   i)using the tag, update the tag in this line -  ` Runner.path("classpath:features").tags("@addition"); `
     
-   ii)using the feature name, update file name in the path method - ` Runner.path("classpath:features/ValidateAdditionGetAPI.feature").parallel(5); `
+   ii)using the feature name, update file name in the path method - ` Runner.path("classpath:features/ValidateAdditionGetAPI.feature"); `
 
 
-
+5. to run from maven use command `mvn test`
 
 
 
@@ -43,5 +43,6 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 
 5. The reports are generated in the target folder eg> html report for ValidateAdditionGetAPI.feature 
 **target/surefire-reports/features.ValidateAdditionPOSTAPI.html**
+[NOTE]- the target folder is also uploaded in this repo (in case, the html report is required directly to be fetched without running the script)
 
-6. To check the issues follow - https://github.com/awssaran007/AtaccamaKarateFramework/issues
+6. To check the defect follow - https://github.com/awssaran007/AtaccamaKarateFramework/issues
