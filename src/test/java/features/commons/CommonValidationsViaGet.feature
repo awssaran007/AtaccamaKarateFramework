@@ -28,14 +28,17 @@ Background:
     When method get
     Then status 400
 
+
   Scenario: Validate two mandatory operands - not providing first operand - should return bad request
+
    #Validate two mandatory operands - not providing first operand - should return bad request'
     Given url operationURL
     And param val1 = 4
     When method get
     Then status 400
 
-  Scenario:Validate two mandatory operands - not providing second operand - should return bad request
+
+  Scenario: Validate two mandatory operands - not providing second operand - should return bad request'
   #Validate two mandatory operands - not providing second operand - should return bad request'
     Given url operationURL
     And param val2 = 5
@@ -43,7 +46,8 @@ Background:
     Then status 400
 
 
-  Scenario Outline: validate <datatype> are not allowed as operands
+  Scenario Outline: Validate <datatype> are not allowed as operands
+    # Validate datatype are not allowed as operands
     Given url operationURL
     And param val1 = <operand1>
     And param val2 = <operand2>
@@ -52,22 +56,32 @@ Background:
 
     Examples:
       |operand1|operand2|datatype|
-      |    3.8 |  4.9   | float  |
+      |   3.8  |  4     | float  |
       |   "a"  |  5     | string |
       |   " "  |  " "   | empty  |
       |   "+"  |  "+"   | special|
 
 
-  @bugs-scenario
-  Scenario: validate additional and redundant values as query parameters are not allowed
+
+  Scenario: Validate additional values as query parameters are not allowed
+   # 'Validate additional values as query parameters are not allowed'
+    Given url operationURL
+    And param val1 = '6'
+    And param val2 = '6'
+    And param val3 = '7'
+    When method get
+    Then status 400
+
+
+  Scenario: Validate redundant values as query parameters are not allowed
    # 'Validate redundant values as query parameters are not allowed'
     Given url operationURL
     And param val1 = '6'
     And param val2 = '6'
-    And param val2 = '8'
-    And param val3 = '7'
+    And param val2 = '7'
     When method get
     Then status 400
+
 
 
 

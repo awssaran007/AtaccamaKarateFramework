@@ -1,23 +1,24 @@
-<testsuite failures="1" name="features/ValidateAdditionGetAPI.feature" skipped="0" tests="4" time="13.981665">
-  <testcase classname="features.ValidateAdditionGetAPI" name="Validate common scenarios for addition via get call" time="3.640686">
-    <failure message="ValidateAdditionGetAPI.feature:12 - &#10;CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {&quot;result&quot;:0}&#10;CommonValidationsViaGet.feature:36 - status code was: 200, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {&quot;result&quot;:4}&#10;CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {&quot;result&quot;:5}&#10;[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 200, expected: 400, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {&quot;result&quot;:0}&#10;[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 18, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=8&amp;val3=7, response: {&quot;result&quot;:14}">* def operationURL = baseUrl + '/add' ..................................... passed
+<testsuite failures="1" name="features/ValidateAdditionGetAPI.feature" skipped="0" tests="14" time="3.48349">
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate common scenarios for addition via get call" time="3.224604">
+    <failure message="ValidateAdditionGetAPI.feature:12 - &#10;CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {&quot;result&quot;:0}&#10;CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {&quot;result&quot;:4}&#10;CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {&quot;result&quot;:5}&#10;[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {&quot;result&quot;:0}&#10;[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {&quot;result&quot;:12}&#10;CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {&quot;result&quot;:13}">* def operationURL = baseUrl + '/add' ..................................... passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
-CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
-CommonValidationsViaGet.feature:36 - status code was: 200, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
-CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
-[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 200, expected: 400, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
-[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 18, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=8&amp;val3=7, response: {"result":14}&#13;
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)</failure>
   </testcase>
-  <testcase classname="features.ValidateAdditionGetAPI" name="Validate addition with two int values (happy path)" time="3.49218">
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate addition with two int values (happy path)" time="0.102716">
     <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
@@ -25,14 +26,15 @@ CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, respon
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
-CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
-CommonValidationsViaGet.feature:36 - status code was: 200, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
-CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
-[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 200, expected: 400, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
-[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 18, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=8&amp;val3=7, response: {"result":14}&#13;
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
 
 * def operationURL = baseUrl + '/add' ..................................... passed
@@ -46,7 +48,7 @@ Then status 200 ........................................................... pass
 Then print response ....................................................... passed
 And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateAdditionGetAPI" name="Validate addition with two negative values" time="3.424705">
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate addition with two negative values" time="0.01809">
     <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
@@ -54,14 +56,15 @@ And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].oper
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
-CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
-CommonValidationsViaGet.feature:36 - status code was: 200, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
-CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
-[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 200, expected: 400, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
-[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 18, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=8&amp;val3=7, response: {"result":14}&#13;
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
 
 * def operationURL = baseUrl + '/add' ..................................... passed
@@ -84,7 +87,7 @@ When method get ........................................................... pass
 Then status 200 ........................................................... passed
 And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateAdditionGetAPI" name="Validate addition with ONE negative and ONE Positive value" time="3.424094">
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate addition with ONE negative and ONE Positive value" time="0.022024">
     <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
@@ -92,14 +95,15 @@ And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].oper
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
-CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
-CommonValidationsViaGet.feature:36 - status code was: 200, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
-CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
-[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 200, expected: 400, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
-[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 18, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=8&amp;val3=7, response: {"result":14}&#13;
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
 
 * def operationURL = baseUrl + '/add' ..................................... passed
@@ -121,6 +125,981 @@ And param val2 = testDataInput[1].operand2 ................................ pass
 When method get ........................................................... passed
 Then status 200 ........................................................... passed
 And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #1" time="0.011103">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #2" time="0.0105">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #3" time="0.013157">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #4" time="0.016019">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #5" time="0.011531">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #6" time="0.014597">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #7" time="0.009134">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #8" time="0.011769">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #9" time="0.01017">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionGetAPI" name="Validate idempotency of the api - returns same result every time #10" time="0.008075">
+    <system-out>* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add, response: {"result":0}
+CommonValidationsViaGet.feature:38 - status code was: 200, expected: 400, response time: 3, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=4, response: {"result":4}
+CommonValidationsViaGet.feature:46 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val2=5, response: {"result":5}
+[6.1:59] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=3.8&amp;val2=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:60] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:61] CommonValidationsViaGet.feature:55 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=+&amp;val2=+, response: {"result":0}
+[6.4:62] CommonValidationsViaGet.feature:55 - status code was: 404, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:73 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=6&amp;val3=7, response: {"result":12}
+CommonValidationsViaGet.feature:83 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/add?val1=6&amp;val2=7, response: {"result":13}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateAdditionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/add' ..................................... passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
 * def operationURL = baseUrl + '/add' ..................................... passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed

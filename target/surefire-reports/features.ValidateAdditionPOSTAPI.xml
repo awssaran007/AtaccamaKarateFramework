@@ -1,6 +1,6 @@
-<testsuite failures="1" name="features/ValidateAdditionPOSTAPI.feature" skipped="0" tests="4" time="3.92706">
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate common scenarios for addition via get call" time="3.704213">
-    <failure message="ValidateAdditionPOSTAPI.feature:14 - &#10;CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:3}&#10;CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+<testsuite failures="1" name="features/ValidateAdditionPOSTAPI.feature" skipped="0" tests="14" time="12.808542">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate common scenarios for addition via get call" time="3.446772">
+    <failure message="ValidateAdditionPOSTAPI.feature:14 - &#10;CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:3}&#10;CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;CommonValidationsViaPost.feature:38 - null&#10;CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;&#10;payLoadReq.val1 = &lt;operand1&gt;&#13;&#10;                  ^ in &lt;eval&gt; at line number 1 at column number 18&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#10;CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;&#10;payLoadReq.val2 = &lt;operand2&gt;&#13;&#10;                  ^ in &lt;eval&gt; at line number 1 at column number 18&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#10;[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field &quot;val3&quot; (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: &quot;val1&quot;, &quot;val2&quot;, &quot;operation&quot;])&#10; at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest[&quot;val3&quot;])', expected: 'Unknown operation: mod', reason: not a sub-string&#10;CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field &quot;val3&quot; (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: &quot;val1&quot;, &quot;val2&quot;, &quot;operation&quot;])&#10; at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest[&quot;val3&quot;])', expected: 'Operation must not be null!', reason: not a sub-string">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
@@ -9,13 +9,26 @@
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
-CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)</failure>
   </testcase>
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two int values (happy path)" time="0.107427">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two int values (happy path)" time="3.020643">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
@@ -25,10 +38,23 @@ CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, respo
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
-CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
@@ -46,7 +72,7 @@ Then status 200 ........................................................... pass
 Then print response ....................................................... passed
 And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two negative values" time="0.044962">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two negative values" time="3.036404">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
@@ -56,10 +82,23 @@ And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].oper
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
-CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
@@ -89,7 +128,7 @@ When method post .......................................................... pass
 Then status 200 ........................................................... passed
 And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with ONE negative and ONE Positive value" time="0.070459">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with ONE negative and ONE Positive value" time="3.035729">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
@@ -99,10 +138,23 @@ And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].oper
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
-CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
 	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
@@ -131,6 +183,1346 @@ And request payLoad ....................................................... pass
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
 And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #1" time="0.028385">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #2" time="0.044996">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #3" time="0.083221">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #4" time="0.010289">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #5" time="0.030913">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #6" time="0.010982">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #7" time="0.016252">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #8" time="0.013971">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #9" time="0.017878">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate idempotency of the api - returns same result every time #10" time="0.012108">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 58, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 29, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+CommonValidationsViaPost.feature:38 - null
+CommonValidationsViaPost.feature:54 - evaluation (js) failed: payLoadReq.val1 = &lt;operand1&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val1 = &lt;operand1&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+CommonValidationsViaPost.feature:66 - evaluation (js) failed: payLoadReq.val2 = &lt;operand2&gt;, javax.script.ScriptException: &lt;eval&gt;:1:18 Expected an operand but found &lt;&#13;
+payLoadReq.val2 = &lt;operand2&gt;&#13;
+                  ^ in &lt;eval&gt; at line number 1 at column number 18
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+[7.1:86] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[7.3:88] CommonValidationsViaPost.feature:81 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:129 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@780551a0; line: 1, column: 46] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Unknown operation: mod', reason: not a sub-string
+CommonValidationsViaPost.feature:141 - path: $, actual: 'Unrecognized field "val3" (class com.ataccama.qa.testcalc.rest.JsonCalcRequest), not marked as ignorable (3 known properties: "val1", "val2", "operation"])
+ at [Source: org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream@6be24824; line: 1, column: 45] (through reference chain: com.ataccama.qa.testcalc.rest.JsonCalcRequest["val3"])', expected: 'Operation must not be null!', reason: not a sub-string&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performAdd = function(op1,op2){return op1 + op2} .................... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "add" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performAdd(testDataInput[0].operand1,testDataInput[1].operand2) . passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
