@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2020-12-24 02:51:45 AM</div>        
+<div id="nav-date">2020-12-28 02:49:26 AM</div>        
       
 <div class="nav-container">
 <div class="nav-item failed">
@@ -81,7 +81,7 @@
 </div>
 <span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">Validate common scenarios for division via get call </span>
 </div>
-<div class="scenario-time failed">ms: 3609</div>
+<div class="scenario-time failed">ms: 3963</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:11]bg">
@@ -95,33 +95,33 @@
 <div class="step-ref bg-step">1</div>
 <div class="step-cell passed">* def operationURL = baseUrl + '/divide'</div>
 </div>
-<div class="time-cell passed">10</div>
+<div class="time-cell passed">25</div>
 </div>
-<div class="preformatted" data-parent="1">02:51:41.320 karate.env system property was: qa</div>
+<div class="preformatted" data-parent="1">02:49:21.197 karate.env system property was: qa</div>
 <div class="step-row" data-parent="[1:11]bg">
 <div class="step-container" id="2">
 <div class="step-ref bg-step">2</div>
 <div class="step-cell passed">* def testDataInput = read('classpath:'+'resources/InputTestData.json')</div>
 </div>
-<div class="time-cell passed">9</div>
+<div class="time-cell passed">10</div>
 </div>
 <div class="step-row" data-parent="[1:11]bg">
 <div class="step-container" id="3">
 <div class="step-ref bg-step">3</div>
 <div class="step-cell passed">* def performDivision =  function(op1,op2){return Math.floor(op1/op2) }</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">71</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="4">
 <div class="step-ref failed">4</div>
 <div class="step-cell failed">* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'}</div>
 </div>
-<div class="time-cell failed">3587</div>
+<div class="time-cell failed">3858</div>
 </div>
-<div class="preformatted" data-parent="4">02:51:45.299 feature call failed: classpath:features/commons/CommonValidationsViaGet.feature
+<div class="preformatted" data-parent="4">02:49:25.451 feature call failed: classpath:features/commons/CommonValidationsViaGet.feature
 arg: {"opURL":"http://localhost:8080/qa_testCalc_java11/restWS/divide"}
-CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -131,8 +131,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -159,7 +158,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[4.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -169,8 +168,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -197,9 +195,50 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}
 ValidateDivisionGetAPI.feature:12 - 
-CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -209,8 +248,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -237,7 +275,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-[4.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -247,8 +285,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -275,13 +312,54 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}</div>
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}</div>
 <div class="step-row">
 <div class="step-container" id="4.1">
 <div class="step-ref failed">&gt;&gt;</div>
 <div class="step-cell failed">features/commons/CommonValidationsViaGet.feature</div>
 </div>
-<div class="time-cell failed">3456</div>
+<div class="time-cell failed">3776</div>
 </div>
 <div class="callarg-container" data-parent="4.1">
 <div class="step-ref"> 
@@ -325,7 +403,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <div class="step-cell passed">And param val1 = '3'</div>
 </div>
-<div class="time-cell passed">11</div>
+<div class="time-cell passed">4</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="8">
@@ -334,7 +412,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <div class="step-cell passed">And param val2 = '4'</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="9">
@@ -343,7 +421,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">3151</div>
+<div class="time-cell passed">3324</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="10">
@@ -361,7 +439,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <div class="step-cell passed">And match response == {result:#number}</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">6</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="12">
@@ -388,7 +466,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <div class="step-cell passed">Given url operationURL  +'tion'</div>
 </div>
-<div class="time-cell passed">22</div>
+<div class="time-cell passed">32</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="14">
@@ -397,9 +475,9 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">40</div>
+<div class="time-cell passed">42</div>
 </div>
-<div class="preformatted" data-parent="14">02:51:45.060 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
+<div class="preformatted" data-parent="14">02:49:25.062 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
 <div class="step-row">
 <div class="step-container" id="15">
 <div class="step-ref passed">15</div>
@@ -443,19 +521,19 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">26</div>
+<div class="time-cell passed">16</div>
 </div>
-<div class="preformatted" data-parent="18">02:51:45.088 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
+<div class="preformatted" data-parent="18">02:49:25.083 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
 <div class="step-row">
 <div class="step-container" id="19">
 <div class="step-ref failed">19</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell failed">Then status 404</div>
+<div class="step-cell failed">Then status 400</div>
 </div>
 <div class="time-cell failed">1</div>
 </div>
-<div class="preformatted" data-parent="19">02:51:45.089 status code was: 500, expected: 404, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+<div class="preformatted" data-parent="19">02:49:25.085 status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -465,8 +543,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -493,7 +570,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, response time: 13, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -503,8 +580,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -532,8 +608,17 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</div>
 <div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def operationURL = opURL</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
 <div class="step-container">
-<div class="step-ref skipped"></div>
+<div class="step-ref passed"></div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell comment">#Validate two mandatory operands - not providing first operand - should return bad request'</div>
@@ -541,44 +626,128 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 <div class="time-cell comment"></div>
 </div>
 <div class="step-row">
-<div class="step-container" id="20">
-<div class="step-ref skipped">20</div>
-<div class="step-indent"> 
-</div>
-<div class="step-cell skipped">Given url operationURL</div>
-</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
 <div class="step-container" id="21">
-<div class="step-ref skipped">21</div>
+<div class="step-ref passed">21</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell skipped">And param val1 = 4</div>
+<div class="step-cell passed">Given url operationURL</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="22">
-<div class="step-ref skipped">22</div>
+<div class="step-ref passed">22</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell skipped">When method get</div>
+<div class="step-cell passed">And param val1 = 4</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">4</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="23">
-<div class="step-ref skipped">23</div>
+<div class="step-ref passed">23</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell skipped">Then status 404</div>
+<div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="preformatted" data-parent="23">02:49:25.107 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref failed">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="24">02:49:25.108 status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def operationURL = opURL</div>
+</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container">
-<div class="step-ref skipped"></div>
+<div class="step-ref passed"></div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell comment">#Validate two mandatory operands - not providing second operand - should return bad request'</div>
@@ -586,99 +755,103 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 <div class="time-cell comment"></div>
 </div>
 <div class="step-row">
-<div class="step-container" id="24">
-<div class="step-ref skipped">24</div>
-<div class="step-indent"> 
-</div>
-<div class="step-cell skipped">Given url operationURL</div>
-</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-container" id="25">
-<div class="step-ref skipped">25</div>
-<div class="step-indent"> 
-</div>
-<div class="step-cell skipped">And param val2 = 5</div>
-</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
 <div class="step-container" id="26">
-<div class="step-ref skipped">26</div>
+<div class="step-ref passed">26</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell skipped">When method get</div>
+<div class="step-cell passed">Given url operationURL</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="27">
-<div class="step-ref skipped">27</div>
+<div class="step-ref passed">27</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell skipped">Then status 404</div>
+<div class="step-cell passed">And param val2 = 5</div>
 </div>
-<div class="time-cell skipped">0</div>
+<div class="time-cell passed">11</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="28">
 <div class="step-ref passed">28</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">* def operationURL = opURL</div>
+<div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">13</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="29">
-<div class="step-ref passed">29</div>
+<div class="step-ref failed">29</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">Given url operationURL</div>
+<div class="step-cell failed">Then status 400</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell failed">1</div>
 </div>
+<div class="preformatted" data-parent="29">02:49:25.135 status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}</div>
 <div class="step-row">
 <div class="step-container" id="30">
 <div class="step-ref passed">30</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">And param val1 = 3.8</div>
+<div class="step-cell passed">* def operationURL = opURL</div>
 </div>
-<div class="time-cell passed">6</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="31">
 <div class="step-ref passed">31</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">And param val2 = 4.9</div>
+<div class="step-cell passed">Given url operationURL</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="32">
 <div class="step-ref passed">32</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">When method get</div>
+<div class="step-cell passed">And param val1 = 3.8</div>
 </div>
-<div class="time-cell passed">38</div>
+<div class="time-cell passed">5</div>
 </div>
-<div class="preformatted" data-parent="32">02:51:45.138 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
 <div class="step-row">
 <div class="step-container" id="33">
 <div class="step-ref passed">33</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">Then status 404</div>
+<div class="step-cell passed">And param val2 = 4.9</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="34">
 <div class="step-ref passed">34</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="preformatted" data-parent="34">02:49:25.157 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref failed">35</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="35">02:49:25.158 status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref passed">36</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">* def operationURL = opURL</div>
@@ -686,8 +859,8 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="35">
-<div class="step-ref passed">35</div>
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">Given url operationURL</div>
@@ -695,8 +868,8 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="36">
-<div class="step-ref passed">36</div>
+<div class="step-container" id="38">
+<div class="step-ref passed">38</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">And param val1 = "a"</div>
@@ -704,30 +877,11 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 <div class="time-cell passed">5</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="37">
-<div class="step-ref passed">37</div>
-<div class="step-indent"> 
-</div>
-<div class="step-cell passed">And param val2 = 5</div>
-</div>
-<div class="time-cell passed">2</div>
-</div>
-<div class="step-row">
-<div class="step-container" id="38">
-<div class="step-ref passed">38</div>
-<div class="step-indent"> 
-</div>
-<div class="step-cell passed">When method get</div>
-</div>
-<div class="time-cell passed">14</div>
-</div>
-<div class="preformatted" data-parent="38">02:51:45.161 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
-<div class="step-row">
 <div class="step-container" id="39">
 <div class="step-ref passed">39</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">Then status 404</div>
+<div class="step-cell passed">And param val2 = 5</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
@@ -736,34 +890,37 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 <div class="step-ref passed">40</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">* def operationURL = opURL</div>
+<div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">51</div>
 </div>
+<div class="preformatted" data-parent="40">02:49:25.216 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
 <div class="step-row">
 <div class="step-container" id="41">
-<div class="step-ref passed">41</div>
+<div class="step-ref failed">41</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">Given url operationURL</div>
+<div class="step-cell failed">Then status 400</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell failed">3</div>
 </div>
+<div class="preformatted" data-parent="41">02:49:25.219 status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</div>
 <div class="step-row">
 <div class="step-container" id="42">
 <div class="step-ref passed">42</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">And param val1 = " "</div>
+<div class="step-cell passed">* def operationURL = opURL</div>
 </div>
-<div class="time-cell passed">4</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="43">
 <div class="step-ref passed">43</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">And param val2 = " "</div>
+<div class="step-cell passed">Given url operationURL</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
@@ -772,21 +929,39 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 <div class="step-ref passed">44</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell passed">When method get</div>
+<div class="step-cell passed">And param val1 = " "</div>
 </div>
-<div class="time-cell passed">14</div>
+<div class="time-cell passed">13</div>
 </div>
-<div class="preformatted" data-parent="44">02:51:45.180 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
 <div class="step-row">
 <div class="step-container" id="45">
-<div class="step-ref failed">45</div>
+<div class="step-ref passed">45</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell failed">Then status 404</div>
+<div class="step-cell passed">And param val2 = " "</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="46">
+<div class="step-ref passed">46</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">71</div>
+</div>
+<div class="preformatted" data-parent="46">02:49:25.304 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
+<div class="step-row">
+<div class="step-container" id="47">
+<div class="step-ref failed">47</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell failed">Then status 400</div>
 </div>
 <div class="time-cell failed">1</div>
 </div>
-<div class="preformatted" data-parent="45">02:51:45.181 status code was: 500, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+<div class="preformatted" data-parent="47">02:49:25.305 status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -796,8 +971,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -824,7 +998,7 @@ CommonValidationsViaGet.feature:29 - status code was: 500, expected: 404, respon
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaGet.feature:51 - status code was: 500, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -834,8 +1008,7 @@ CommonValidationsViaGet.feature:51 - status code was: 500, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -863,8 +1036,65 @@ CommonValidationsViaGet.feature:51 - status code was: 500, expected: 404, respon
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</div>
 <div class="step-row">
-<div class="step-container" id="46">
-<div class="step-ref passed">46</div>
+<div class="step-container" id="48">
+<div class="step-ref passed">48</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def operationURL = opURL</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="49">
+<div class="step-ref passed">49</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url operationURL</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="50">
+<div class="step-ref passed">50</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And param val1 = "+"</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="51">
+<div class="step-ref passed">51</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And param val2 = "+"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="52">
+<div class="step-ref passed">52</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">63</div>
+</div>
+<div class="preformatted" data-parent="52">02:49:25.375 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
+<div class="step-row">
+<div class="step-container" id="53">
+<div class="step-ref failed">53</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">2</div>
+</div>
+<div class="preformatted" data-parent="53">02:49:25.377 status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 &ndash; Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 &ndash; Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</div>
+<div class="step-row">
+<div class="step-container" id="54">
+<div class="step-ref passed">54</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">* def operationURL = opURL</div>
@@ -881,8 +1111,8 @@ CommonValidationsViaGet.feature:51 - status code was: 500, expected: 404, respon
 <div class="time-cell comment"></div>
 </div>
 <div class="step-row">
-<div class="step-container" id="47">
-<div class="step-ref passed">47</div>
+<div class="step-container" id="55">
+<div class="step-ref passed">55</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">Given url operationURL</div>
@@ -890,61 +1120,61 @@ CommonValidationsViaGet.feature:51 - status code was: 500, expected: 404, respon
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="48">
-<div class="step-ref passed">48</div>
+<div class="step-container" id="56">
+<div class="step-ref passed">56</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">And param val1 = '6'</div>
 </div>
-<div class="time-cell passed">73</div>
+<div class="time-cell passed">8</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="49">
-<div class="step-ref passed">49</div>
+<div class="step-container" id="57">
+<div class="step-ref passed">57</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">And param val2 = '6'</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="50">
-<div class="step-ref passed">50</div>
+<div class="step-container" id="58">
+<div class="step-ref passed">58</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">And param val2 = '8'</div>
 </div>
-<div class="time-cell passed">12</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="51">
-<div class="step-ref passed">51</div>
+<div class="step-container" id="59">
+<div class="step-ref passed">59</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">And param val3 = '7'</div>
 </div>
-<div class="time-cell passed">8</div>
+<div class="time-cell passed">4</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="52">
-<div class="step-ref passed">52</div>
+<div class="step-container" id="60">
+<div class="step-ref passed">60</div>
 <div class="step-indent"> 
 </div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">15</div>
+<div class="time-cell passed">54</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="53">
-<div class="step-ref failed">53</div>
+<div class="step-container" id="61">
+<div class="step-ref failed">61</div>
 <div class="step-indent"> 
 </div>
-<div class="step-cell failed">Then status 404</div>
+<div class="step-cell failed">Then status 400</div>
 </div>
-<div class="time-cell failed">4</div>
+<div class="time-cell failed">0</div>
 </div>
-<div class="preformatted" data-parent="53">02:51:45.294 status code was: 200, expected: 404, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}
-CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}</div>
+<div class="preformatted" data-parent="61">02:49:25.448 status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading" id="[2:15]">
@@ -954,7 +1184,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <span class="scenario-keyword">Scenario: [2:15]</span><span class="scenario-name">Validate division with two int values (happy path) </span>
 </div>
-<div class="scenario-time passed">ms: 50</div>
+<div class="scenario-time passed">ms: 75</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2:15]bg">
@@ -964,78 +1194,78 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 <div class="time-cell passed"></div>
 </div>
 <div class="step-row" data-parent="[2:15]bg">
-<div class="step-container" id="54">
-<div class="step-ref bg-step">54</div>
+<div class="step-container" id="62">
+<div class="step-ref bg-step">62</div>
 <div class="step-cell passed">* def operationURL = baseUrl + '/divide'</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="54">02:51:45.363 karate.env system property was: qa</div>
+<div class="preformatted" data-parent="62">02:49:25.610 karate.env system property was: qa</div>
 <div class="step-row" data-parent="[2:15]bg">
-<div class="step-container" id="55">
-<div class="step-ref bg-step">55</div>
+<div class="step-container" id="63">
+<div class="step-ref bg-step">63</div>
 <div class="step-cell passed">* def testDataInput = read('classpath:'+'resources/InputTestData.json')</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">9</div>
 </div>
 <div class="step-row" data-parent="[2:15]bg">
-<div class="step-container" id="56">
-<div class="step-ref bg-step">56</div>
+<div class="step-container" id="64">
+<div class="step-ref bg-step">64</div>
 <div class="step-cell passed">* def performDivision =  function(op1,op2){return Math.floor(op1/op2) }</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">15</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="57">
-<div class="step-ref passed">57</div>
+<div class="step-container" id="65">
+<div class="step-ref passed">65</div>
 <div class="step-cell passed">Given url operationURL</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="58">
-<div class="step-ref passed">58</div>
+<div class="step-container" id="66">
+<div class="step-ref passed">66</div>
 <div class="step-cell passed">And param val1 = testDataInput[0].operand1</div>
 </div>
-<div class="time-cell passed">6</div>
+<div class="time-cell passed">23</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="59">
-<div class="step-ref passed">59</div>
+<div class="step-container" id="67">
+<div class="step-ref passed">67</div>
 <div class="step-cell passed">And param val2 = testDataInput[0].operand2</div>
 </div>
-<div class="time-cell passed">11</div>
+<div class="time-cell passed">9</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="60">
-<div class="step-ref passed">60</div>
+<div class="step-container" id="68">
+<div class="step-ref passed">68</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">8</div>
+<div class="time-cell passed">16</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="61">
-<div class="step-ref passed">61</div>
+<div class="step-container" id="69">
+<div class="step-ref passed">69</div>
 <div class="step-cell passed">Then status 200</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="62">
-<div class="step-ref passed">62</div>
+<div class="step-container" id="70">
+<div class="step-ref passed">70</div>
 <div class="step-cell passed">Then print response</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="62">02:51:45.415 [print] {
+<div class="preformatted" data-parent="70">02:49:25.702 [print] {
   "result": 1
 }</div>
 <div class="step-row">
-<div class="step-container" id="63">
-<div class="step-ref passed">63</div>
+<div class="step-container" id="71">
+<div class="step-ref passed">71</div>
 <div class="step-cell passed">And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2)</div>
 </div>
-<div class="time-cell passed">20</div>
+<div class="time-cell passed">1</div>
 </div>
 </div>
 <div class="scenario">
@@ -1046,7 +1276,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <span class="scenario-keyword">Scenario: [3:25]</span><span class="scenario-name">Validate division with two negative values </span>
 </div>
-<div class="scenario-time passed">ms: 30</div>
+<div class="scenario-time passed">ms: 107</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[3:25]bg">
@@ -1056,68 +1286,68 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 <div class="time-cell passed"></div>
 </div>
 <div class="step-row" data-parent="[3:25]bg">
-<div class="step-container" id="64">
-<div class="step-ref bg-step">64</div>
+<div class="step-container" id="72">
+<div class="step-ref bg-step">72</div>
 <div class="step-cell passed">* def operationURL = baseUrl + '/divide'</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="64">02:51:45.516 karate.env system property was: qa</div>
+<div class="preformatted" data-parent="72">02:49:25.101 karate.env system property was: qa</div>
 <div class="step-row" data-parent="[3:25]bg">
-<div class="step-container" id="65">
-<div class="step-ref bg-step">65</div>
+<div class="step-container" id="73">
+<div class="step-ref bg-step">73</div>
 <div class="step-cell passed">* def testDataInput = read('classpath:'+'resources/InputTestData.json')</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row" data-parent="[3:25]bg">
-<div class="step-container" id="66">
-<div class="step-ref bg-step">66</div>
+<div class="step-container" id="74">
+<div class="step-ref bg-step">74</div>
 <div class="step-cell passed">* def performDivision =  function(op1,op2){return Math.floor(op1/op2) }</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="67">
-<div class="step-ref passed">67</div>
+<div class="step-container" id="75">
+<div class="step-ref passed">75</div>
 <div class="step-cell passed">Given url operationURL</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="68">
-<div class="step-ref passed">68</div>
+<div class="step-container" id="76">
+<div class="step-ref passed">76</div>
 <div class="step-cell passed">And param val1 = testDataInput[1].operand1</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">10</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="69">
-<div class="step-ref passed">69</div>
+<div class="step-container" id="77">
+<div class="step-ref passed">77</div>
 <div class="step-cell passed">And param val2 = testDataInput[1].operand2</div>
 </div>
-<div class="time-cell passed">5</div>
+<div class="time-cell passed">34</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="70">
-<div class="step-ref passed">70</div>
+<div class="step-container" id="78">
+<div class="step-ref passed">78</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">12</div>
+<div class="time-cell passed">58</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="71">
-<div class="step-ref passed">71</div>
+<div class="step-container" id="79">
+<div class="step-ref passed">79</div>
 <div class="step-cell passed">Then status 200</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="72">
-<div class="step-ref passed">72</div>
+<div class="step-container" id="80">
+<div class="step-ref passed">80</div>
 <div class="step-cell passed">And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2)</div>
 </div>
-<div class="time-cell passed">11</div>
+<div class="time-cell passed">2</div>
 </div>
 </div>
 <div class="scenario">
@@ -1128,7 +1358,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <span class="scenario-keyword">Scenario: [4:33]</span><span class="scenario-name">Validate division with one positive and negative values </span>
 </div>
-<div class="scenario-time passed">ms: 43</div>
+<div class="scenario-time passed">ms: 36</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[4:33]bg">
@@ -1138,68 +1368,68 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 <div class="time-cell passed"></div>
 </div>
 <div class="step-row" data-parent="[4:33]bg">
-<div class="step-container" id="73">
-<div class="step-ref bg-step">73</div>
+<div class="step-container" id="81">
+<div class="step-ref bg-step">81</div>
 <div class="step-cell passed">* def operationURL = baseUrl + '/divide'</div>
 </div>
-<div class="time-cell passed">5</div>
+<div class="time-cell passed">3</div>
 </div>
-<div class="preformatted" data-parent="73">02:51:45.394 karate.env system property was: qa</div>
+<div class="preformatted" data-parent="81">02:49:25.674 karate.env system property was: qa</div>
 <div class="step-row" data-parent="[4:33]bg">
-<div class="step-container" id="74">
-<div class="step-ref bg-step">74</div>
+<div class="step-container" id="82">
+<div class="step-ref bg-step">82</div>
 <div class="step-cell passed">* def testDataInput = read('classpath:'+'resources/InputTestData.json')</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row" data-parent="[4:33]bg">
-<div class="step-container" id="75">
-<div class="step-ref bg-step">75</div>
+<div class="step-container" id="83">
+<div class="step-ref bg-step">83</div>
 <div class="step-cell passed">* def performDivision =  function(op1,op2){return Math.floor(op1/op2) }</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="76">
-<div class="step-ref passed">76</div>
+<div class="step-container" id="84">
+<div class="step-ref passed">84</div>
 <div class="step-cell passed">Given url operationURL</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="77">
-<div class="step-ref passed">77</div>
+<div class="step-container" id="85">
+<div class="step-ref passed">85</div>
 <div class="step-cell passed">And param val1 = testDataInput[1].operand1</div>
 </div>
-<div class="time-cell passed">5</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="78">
-<div class="step-ref passed">78</div>
+<div class="step-container" id="86">
+<div class="step-ref passed">86</div>
 <div class="step-cell passed">And param val2 = testDataInput[0].operand2</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="79">
-<div class="step-ref passed">79</div>
+<div class="step-container" id="87">
+<div class="step-ref passed">87</div>
 <div class="step-cell passed">When method get</div>
 </div>
 <div class="time-cell passed">20</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="80">
-<div class="step-ref passed">80</div>
+<div class="step-container" id="88">
+<div class="step-ref passed">88</div>
 <div class="step-cell passed">Then status 200</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="81">
-<div class="step-ref passed">81</div>
+<div class="step-container" id="89">
+<div class="step-ref passed">89</div>
 <div class="step-cell passed">And match $.result == performDivision(testDataInput[1].operand1,testDataInput[0].operand2)</div>
 </div>
-<div class="time-cell passed">10</div>
+<div class="time-cell passed">9</div>
 </div>
 </div>
 <div class="scenario">
@@ -1210,7 +1440,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 </div>
 <span class="scenario-keyword">Scenario: [5:43]</span><span class="scenario-name">Validate division with zero </span>
 </div>
-<div class="scenario-time failed">ms: 32</div>
+<div class="scenario-time failed">ms: 26</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[5:43]bg">
@@ -1220,64 +1450,64 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 <div class="time-cell passed"></div>
 </div>
 <div class="step-row" data-parent="[5:43]bg">
-<div class="step-container" id="82">
-<div class="step-ref bg-step">82</div>
+<div class="step-container" id="90">
+<div class="step-ref bg-step">90</div>
 <div class="step-cell passed">* def operationURL = baseUrl + '/divide'</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
-<div class="preformatted" data-parent="82">02:51:45.445 karate.env system property was: qa</div>
+<div class="preformatted" data-parent="90">02:49:25.593 karate.env system property was: qa</div>
 <div class="step-row" data-parent="[5:43]bg">
-<div class="step-container" id="83">
-<div class="step-ref bg-step">83</div>
+<div class="step-container" id="91">
+<div class="step-ref bg-step">91</div>
 <div class="step-cell passed">* def testDataInput = read('classpath:'+'resources/InputTestData.json')</div>
 </div>
-<div class="time-cell passed">7</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row" data-parent="[5:43]bg">
-<div class="step-container" id="84">
-<div class="step-ref bg-step">84</div>
+<div class="step-container" id="92">
+<div class="step-ref bg-step">92</div>
 <div class="step-cell passed">* def performDivision =  function(op1,op2){return Math.floor(op1/op2) }</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="85">
-<div class="step-ref passed">85</div>
+<div class="step-container" id="93">
+<div class="step-ref passed">93</div>
 <div class="step-cell passed">Given url operationURL</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="86">
-<div class="step-ref passed">86</div>
+<div class="step-container" id="94">
+<div class="step-ref passed">94</div>
 <div class="step-cell passed">And param val1 = testDataInput[1].operand1</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="87">
-<div class="step-ref passed">87</div>
+<div class="step-container" id="95">
+<div class="step-ref passed">95</div>
 <div class="step-cell passed">And param val2 = 0</div>
 </div>
-<div class="time-cell passed">7</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="88">
-<div class="step-ref passed">88</div>
+<div class="step-container" id="96">
+<div class="step-ref passed">96</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">16</div>
+<div class="time-cell passed">19</div>
 </div>
-<div class="preformatted" data-parent="88">02:51:45.480 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
+<div class="preformatted" data-parent="96">02:49:25.621 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.</div>
 <div class="step-row">
-<div class="step-container" id="89">
-<div class="step-ref failed">89</div>
+<div class="step-container" id="97">
+<div class="step-ref failed">97</div>
 <div class="step-cell failed">Then status 200</div>
 </div>
 <div class="time-cell failed">1</div>
 </div>
-<div class="preformatted" data-parent="89">02:51:45.481 status code was: 500, expected: 200, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=-44&amp;val2=0, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+<div class="preformatted" data-parent="97">02:49:25.621 status code was: 500, expected: 200, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=-44&amp;val2=0, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -1287,8 +1517,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -1315,7 +1544,7 @@ CommonValidationsViaGet.feature:69 - status code was: 200, expected: 404, respon
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-ValidateDivisionGetAPI.feature:48 - status code was: 500, expected: 200, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=-44&amp;val2=0, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+ValidateDivisionGetAPI.feature:48 - status code was: 500, expected: 200, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=-44&amp;val2=0, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 &ndash; Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -1325,8 +1554,7 @@ ValidateDivisionGetAPI.feature:48 - status code was: 500, expected: 200, respons
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -1354,8 +1582,8 @@ ValidateDivisionGetAPI.feature:48 - status code was: 500, expected: 200, respons
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</div>
 <div class="step-row">
-<div class="step-container" id="90">
-<div class="step-ref skipped">90</div>
+<div class="step-container" id="98">
+<div class="step-ref skipped">98</div>
 <div class="step-cell skipped">And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2)</div>
 </div>
 <div class="time-cell skipped">0</div>

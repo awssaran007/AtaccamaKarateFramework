@@ -29,7 +29,7 @@ class FeatureRunner {
     @Test
     public void testRunner() {
         System.setProperty("karate.env", "qa");
-        Results results = Runner.path("classpath:features").tags("@division").parallel(5);
+        Results results = Runner.path("classpath:features").tags("@addition").parallel(5);
         System.out.println("Total features running: " + results.getFeatureCount());
         System.out.println("Total scenario run: " + results.getScenarioCount());
         System.out.println("Total failed scenario : " + results.getFailCount());

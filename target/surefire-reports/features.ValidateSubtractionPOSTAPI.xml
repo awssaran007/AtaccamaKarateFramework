@@ -1,35 +1,35 @@
-<testsuite failures="1" name="features/ValidateSubtractionPOSTAPI.feature" skipped="0" tests="4" time="4.383996">
-  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate common scenarios for subtraction via get call" time="4.198472">
-    <failure message="ValidateSubtractionPOSTAPI.feature:14 - &#10;[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 22, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:-1}&#10;[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:-1}&#10;[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:-4}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+<testsuite failures="1" name="features/ValidateSubtractionPOSTAPI.feature" skipped="0" tests="4" time="3.981856">
+  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate common scenarios for subtraction via get call" time="3.588245">
+    <failure message="ValidateSubtractionPOSTAPI.feature:14 - &#10;CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 54, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:3}&#10;CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:-1}&#10;[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:-1}&#10;[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performSubtract = function(op1,op2){return op1 - op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "sub" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateSubtractionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 22, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-4}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateSubtractionPOSTAPI.feature:14)</failure>
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 54, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateSubtractionPOSTAPI.feature:14)</failure>
   </testcase>
-  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate subtraction with two int values (happy path)" time="0.084061">
+  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate subtraction with two int values (happy path)" time="0.123141">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performSubtract = function(op1,op2){return op1 - op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "sub" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateSubtractionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 22, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-4}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateSubtractionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 54, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateSubtractionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performSubtract = function(op1,op2){return op1 - op2} ............... passed
@@ -46,21 +46,21 @@ Then status 200 ........................................................... pass
 Then print response ....................................................... passed
 And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate subtraction with two negative values" time="0.082021">
+  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate subtraction with two negative values" time="0.139957">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performSubtract = function(op1,op2){return op1 - op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "sub" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateSubtractionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 22, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-4}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateSubtractionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 54, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateSubtractionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performSubtract = function(op1,op2){return op1 - op2} ............... passed
@@ -89,21 +89,21 @@ When method post .......................................................... pass
 Then status 200 ........................................................... passed
 And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate subtraction with ONE negative and ONE Positive value" time="0.019443">
+  <testcase classname="features.ValidateSubtractionPOSTAPI" name="Validate subtraction with ONE negative and ONE Positive value" time="0.130513">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performSubtract = function(op1,op2){return op1 - op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "sub" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateSubtractionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 22, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-4}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateSubtractionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 54, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 20, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":-1}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateSubtractionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performSubtract = function(op1,op2){return op1 - op2} ............... passed

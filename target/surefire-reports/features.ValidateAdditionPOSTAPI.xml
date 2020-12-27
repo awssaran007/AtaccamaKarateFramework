@@ -1,35 +1,35 @@
-<testsuite failures="1" name="features/ValidateAdditionPOSTAPI.feature" skipped="0" tests="4" time="15.275057">
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate common scenarios for addition via get call" time="4.12875">
-    <failure message="ValidateAdditionPOSTAPI.feature:14 - &#10;[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 26, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:10}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+<testsuite failures="1" name="features/ValidateAdditionPOSTAPI.feature" skipped="0" tests="4" time="3.92706">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate common scenarios for addition via get call" time="3.704213">
+    <failure message="ValidateAdditionPOSTAPI.feature:14 - &#10;CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:3}&#10;CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:7}&#10;[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "add" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 26, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":10}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateAdditionPOSTAPI.feature:14)</failure>
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)</failure>
   </testcase>
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two int values (happy path)" time="3.693417">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two int values (happy path)" time="0.107427">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "add" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 26, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":10}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
@@ -46,21 +46,21 @@ Then status 200 ........................................................... pass
 Then print response ....................................................... passed
 And match $.result == performAdd(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two negative values" time="3.713345">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with two negative values" time="0.044962">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "add" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 26, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":10}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
@@ -89,21 +89,21 @@ When method post .......................................................... pass
 Then status 200 ........................................................... passed
 And match $.result == performAdd(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with ONE negative and ONE Positive value" time="3.739546">
+  <testcase classname="features.ValidateAdditionPOSTAPI" name="Validate addition with ONE negative and ONE Positive value" time="0.070459">
     <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "add" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateAdditionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 26, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":10}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateAdditionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 55, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":3}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 30, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":7}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)} (ValidateAdditionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performAdd = function(op1,op2){return op1 + op2} .................... passed

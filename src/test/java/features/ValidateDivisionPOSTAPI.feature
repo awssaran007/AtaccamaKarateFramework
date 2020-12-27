@@ -11,7 +11,7 @@ Feature: Validate division
 
   @common-scenarios
   Scenario: Validate common scenarios for division via get call
-    * call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)}
+    * call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}}
 
 
 

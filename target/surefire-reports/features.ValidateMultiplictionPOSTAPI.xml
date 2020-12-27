@@ -1,35 +1,35 @@
-<testsuite failures="4" name="features/ValidateMultiplictionPOSTAPI.feature" skipped="0" tests="4" time="3.959531">
-  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate common scenarios for multiplication via get call" time="3.783564">
-    <failure message="ValidateMultiplictionPOSTAPI.feature:14 - &#10;[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:12}&#10;[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:12}&#10;[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 24, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:21}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+<testsuite failures="1" name="features/ValidateMultiplictionPOSTAPI.feature" skipped="0" tests="4" time="4.314616">
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate common scenarios for multiplication via get call" time="3.870932">
+    <failure message="ValidateMultiplictionPOSTAPI.feature:14 - &#10;CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:12}&#10;[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:12}&#10;[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "mul" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 24, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":21}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateMultiplictionPOSTAPI.feature:14)</failure>
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)</failure>
   </testcase>
-  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with two int values (happy path)" time="0.110315">
-    <failure message="ValidateMultiplictionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: &quot;performSubtract&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with two int values (happy path)" time="0.148164">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "mul" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 24, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":21}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
@@ -44,28 +44,23 @@ And request payLoad ....................................................... pass
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
 Then print response ....................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) (ValidateMultiplictionPOSTAPI.feature:27)</failure>
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with two negative values" time="0.028151">
-    <failure message="ValidateMultiplictionPOSTAPI.feature:37 - evaluation (js) failed: performSubtract(testDataInput[1].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: &quot;performSubtract&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with two negative values" time="0.159772">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "mul" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 24, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":21}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
@@ -80,13 +75,7 @@ And request payLoad ....................................................... pass
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
 Then print response ....................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) (ValidateMultiplictionPOSTAPI.feature:27)&#13;
-
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[0].operand2) . passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
@@ -98,28 +87,23 @@ And payLoad.val2 = testDataInput[1].operand2 .............................. pass
 And request payLoad ....................................................... passed
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
-And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:37 - evaluation (js) failed: performSubtract(testDataInput[1].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) (ValidateMultiplictionPOSTAPI.feature:37)</failure>
+And match $.result == performMultiply(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with ONE negative and ONE Positive value" time="0.037501">
-    <failure message="ValidateMultiplictionPOSTAPI.feature:47 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: &quot;performSubtract&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with ONE negative and ONE Positive value" time="0.135748">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "mul" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 24, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 5, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":21}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
@@ -134,13 +118,7 @@ And request payLoad ....................................................... pass
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
 Then print response ....................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) (ValidateMultiplictionPOSTAPI.feature:27)&#13;
-
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[0].operand2) . passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
@@ -152,13 +130,7 @@ And payLoad.val2 = testDataInput[1].operand2 .............................. pass
 And request payLoad ....................................................... passed
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
-And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:37 - evaluation (js) failed: performSubtract(testDataInput[1].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) (ValidateMultiplictionPOSTAPI.feature:37)&#13;
-
+And match $.result == performMultiply(testDataInput[1].operand1,testDataInput[1].operand2) . passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
 * def performMultiply = function(op1,op2){return op1 * op2} ............... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
@@ -170,11 +142,6 @@ And payLoad.val2 = testDataInput[1].operand2 .............................. pass
 And request payLoad ....................................................... passed
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[1].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:47 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[1].operand2) (ValidateMultiplictionPOSTAPI.feature:47)</failure>
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
   </testcase>
 </testsuite>

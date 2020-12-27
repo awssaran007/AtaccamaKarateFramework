@@ -1,17 +1,15 @@
-<testsuite failures="4" name="features/ValidateDivisionPOSTAPI.feature" skipped="0" tests="4" time="13.690729">
-  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate common scenarios for division via get call" time="3.707703">
-    <failure message="ValidateDivisionPOSTAPI.feature:14 - &#10;[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 500, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;&#10;&#9;com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;&#10;&#9;sun.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)&#13;&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;&#10;&#9;org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+<testsuite failures="2" name="features/ValidateDivisionPOSTAPI.feature" skipped="0" tests="4" time="14.788083">
+  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate common scenarios for division via get call" time="4.175604">
+    <failure message="ValidateDivisionPOSTAPI.feature:14 - &#10;CommonValidationsViaPost.feature:20 - status code was: 500, expected: 400, response time: 67, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;&#10;&#9;com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;&#10;&#9;sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;&#10;&#9;org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 87, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 500, expected: 400, response time: 44, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;&#10;&#9;com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;&#10;&#9;sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;&#10;&#9;org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 500, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaPost.feature:20 - status code was: 500, expected: 400, response time: 67, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -22,7 +20,7 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
-	sun.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -49,22 +47,59 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateDivisionPOSTAPI.feature:14)</failure>
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 87, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 500, expected: 400, response time: 44, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateDivisionPOSTAPI.feature:14)</failure>
   </testcase>
-  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate division with two int values (happy path)" time="3.322813">
-    <failure message="ValidateDivisionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: &quot;performSubtract&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate division with two int values (happy path)" time="3.524392">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 500, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaPost.feature:20 - status code was: 500, expected: 400, response time: 67, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -75,7 +110,7 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
-	sun.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -102,11 +137,50 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateDivisionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 87, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 500, expected: 400, response time: 44, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateDivisionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
@@ -118,26 +192,19 @@ And request payLoad ....................................................... pass
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
 Then print response ....................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) (ValidateDivisionPOSTAPI.feature:27)</failure>
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate division with two negative values" time="3.328211">
-    <failure message="ValidateDivisionPOSTAPI.feature:37 - evaluation (js) failed: performSubtract(testDataInput[1].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: &quot;performSubtract&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate division with two negative values" time="3.533534">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 500, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaPost.feature:20 - status code was: 500, expected: 400, response time: 67, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -148,7 +215,7 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
-	sun.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -175,11 +242,50 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateDivisionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 87, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 500, expected: 400, response time: 44, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateDivisionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
@@ -191,15 +297,9 @@ And request payLoad ....................................................... pass
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
 Then print response ....................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) (ValidateDivisionPOSTAPI.feature:27)&#13;
-
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2) . passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
@@ -209,26 +309,19 @@ And payLoad.val2 = testDataInput[1].operand2 .............................. pass
 And request payLoad ....................................................... passed
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
-And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:37 - evaluation (js) failed: performSubtract(testDataInput[1].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) (ValidateDivisionPOSTAPI.feature:37)</failure>
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
   </testcase>
-  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate division with ONE negative and ONE Positive value" time="3.332003">
-    <failure message="ValidateDivisionPOSTAPI.feature:47 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: &quot;performSubtract&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+  <testcase classname="features.ValidateDivisionPOSTAPI" name="Validate division with ONE negative and ONE Positive value" time="3.554554">
+    <failure message="ValidateDivisionPOSTAPI.feature:47 - path: $.result, actual: 0, expected: -1.0, reason: not equal (Integer : Double)">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
-* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} . failed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
 
 Stack Trace:
 com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 - 
-[3.1:62] CommonValidationsViaPost.feature:48 - status code was: 200, expected: 404, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.1:79] CommonValidationsViaPost.feature:74 - status code was: 200, expected: 400, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
-[4.3:81] CommonValidationsViaPost.feature:74 - status code was: 500, expected: 400, response time: 8, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+CommonValidationsViaPost.feature:20 - status code was: 500, expected: 400, response time: 67, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
 	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
 	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
@@ -239,7 +332,7 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
 	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
 	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
-	sun.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
 	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
 	java.lang.reflect.Method.invoke(Method.java:498)&#13;
 	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
@@ -266,11 +359,50 @@ com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:14 
 	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
 	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
 &lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-CommonValidationsViaPost.feature:93 - status code was: 200, expected: 404, response time: 4, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
-	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)} (ValidateDivisionPOSTAPI.feature:14)&#13;
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 7, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 87, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 500, expected: 400, response time: 44, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.TestCalc.compute(TestCalc.java:49)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.compute(TestCalcRest.java:52)&#13;
+	sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateDivisionPOSTAPI.feature:14)&#13;
 
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
@@ -282,15 +414,9 @@ And request payLoad ....................................................... pass
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
 Then print response ....................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:27 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[0].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[0].operand2) (ValidateDivisionPOSTAPI.feature:27)&#13;
-
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2) . passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
@@ -300,15 +426,9 @@ And payLoad.val2 = testDataInput[1].operand2 .............................. pass
 And request payLoad ....................................................... passed
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
-And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:37 - evaluation (js) failed: performSubtract(testDataInput[1].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[1].operand1,testDataInput[1].operand2) (ValidateDivisionPOSTAPI.feature:37)&#13;
-
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2) . passed
 * def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
-* def performMultiply = function(op1,op2){return Math.floor(op1/op2) } .... passed
+* def performDivision = function(op1,op2){return Math.floor(op1/op2) } .... passed
 * def baseUrlCompute = baseUrl + '/compute' ............................... passed
 * def payLoad = {} ........................................................ passed
 * payLoad.operation = "div" ............................................... passed
@@ -318,11 +438,10 @@ And payLoad.val2 = testDataInput[1].operand2 .............................. pass
 And request payLoad ....................................................... passed
 When method post .......................................................... passed
 Then status 200 ........................................................... passed
-And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[1].operand2) . failed
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[1].operand2) . failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:47 - evaluation (js) failed: performSubtract(testDataInput[0].operand1,testDataInput[1].operand2), javax.script.ScriptException: ReferenceError: "performSubtract" is not defined in &lt;eval&gt; at line number 1
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
-	at ✽.And match $.result == performSubtract(testDataInput[0].operand1,testDataInput[1].operand2) (ValidateDivisionPOSTAPI.feature:47)</failure>
+com.intuit.karate.exception.KarateException: ValidateDivisionPOSTAPI.feature:47 - path: $.result, actual: 0, expected: -1.0, reason: not equal (Integer : Double)&#13;
+	at ✽.And match $.result == performDivision(testDataInput[0].operand1,testDataInput[1].operand2) (ValidateDivisionPOSTAPI.feature:47)</failure>
   </testcase>
 </testsuite>
