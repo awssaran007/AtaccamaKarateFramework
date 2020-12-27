@@ -22,26 +22,28 @@ Background:
     Then status 404
 
 
-  Scenario: Validate two mandatory operands - not providing one operand - should return bad request
+  Scenario: Validate two mandatory operands - not providing both operand - should return bad request
   #Validate two mandatory operands - not providing both the operands - should return bad request'
     Given url operationURL
     When method get
-    Then status 404
+    Then status 400
 
 
-    Scenario:Validate two mandatory operands - not providing first operand - should return bad request
+  Scenario: Validate two mandatory operands - not providing first operand - should return bad request
+
    #Validate two mandatory operands - not providing first operand - should return bad request'
     Given url operationURL
     And param val1 = 4
     When method get
-    Then status 404
+    Then status 400
 
-    Scenario: Validate two mandatory operands - not providing second operand - should return bad request'
+
+  Scenario: Validate two mandatory operands - not providing second operand - should return bad request'
   #Validate two mandatory operands - not providing second operand - should return bad request'
     Given url operationURL
     And param val2 = 5
     When method get
-    Then status 404
+    Then status 400
 
 
   Scenario Outline: Validate <datatype> are not allowed as operands
@@ -50,16 +52,17 @@ Background:
     And param val1 = <operand1>
     And param val2 = <operand2>
     When method get
-    Then status 404
+    Then status 400
 
     Examples:
       |operand1|operand2|datatype|
       |   3.8  |  4     | float  |
       |   "a"  |  5     | string |
-      |   +    |  +     | specialchar |
+      |   " "  |  " "   | empty  |
+      |   "+"  |  "+"   | special|
 
 
-  @bugs-scenario
+
   Scenario: Validate additional values as query parameters are not allowed
    # 'Validate additional values as query parameters are not allowed'
     Given url operationURL
@@ -69,7 +72,7 @@ Background:
     When method get
     Then status 400
 
-  @bugs-scenario
+
   Scenario: Validate redundant values as query parameters are not allowed
    # 'Validate redundant values as query parameters are not allowed'
     Given url operationURL
@@ -78,6 +81,7 @@ Background:
     And param val2 = '7'
     When method get
     Then status 400
+
 
 
 

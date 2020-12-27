@@ -1,0 +1,771 @@
+<testsuite failures="2" name="features/ValidateDivisionGetAPI.feature" skipped="0" tests="5" time="4.206761">
+  <testcase classname="features.ValidateDivisionGetAPI" name="Validate common scenarios for division via get call" time="3.96275">
+    <failure message="ValidateDivisionGetAPI.feature:12 - &#10;CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;&#10;&#9;com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;&#10;&#9;sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;&#10;&#9;org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;&#10;&#9;com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;&#10;&#9;sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;&#10;&#9;org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {&quot;result&quot;:0}&#10;[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;&#10;&#9;com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;&#10;&#9;sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;&#10;&#9;org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#10;CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {&quot;result&quot;:0}">* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateDivisionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateDivisionGetAPI.feature:12)</failure>
+  </testcase>
+  <testcase classname="features.ValidateDivisionGetAPI" name="Validate division with two int values (happy path)" time="0.075277">
+    <system-out>* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateDivisionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateDivisionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateDivisionGetAPI" name="Validate division with two negative values" time="0.106914">
+    <system-out>* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateDivisionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateDivisionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateDivisionGetAPI" name="Validate division with one positive and negative values" time="0.036116">
+    <system-out>* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateDivisionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateDivisionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[0].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateDivisionGetAPI" name="Validate division with zero" time="0.025703">
+    <failure message="ValidateDivisionGetAPI.feature:48 - status code was: 500, expected: 200, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=-44&amp;val2=0, response: &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;&#10;&#9;com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;&#10;&#9;com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;&#10;&#9;sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;&#10;&#9;org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;&#10;&#9;org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;&#10;&#9;org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;&#10;&#9;org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;&#10;&#9;org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;&#10;&#9;org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;&#10;&#9;org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;&#10;&#9;org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;&#10;&#9;org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;&#10;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;">* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateDivisionGetAPI.feature:12 - 
+CommonValidationsViaGet.feature:29 - status code was: 500, expected: 400, response time: 12, url: http://localhost:8080/qa_testCalc_java11/restWS/divide, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:36 - status code was: 500, expected: 400, response time: 9, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=4, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:43 - status code was: 200, expected: 400, response time: 11, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val2=5, response: {"result":0}
+[6.1:55] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 6, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=3.8&amp;val2=4.9, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.2:56] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 47, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=a&amp;val2=5, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.3:57] CommonValidationsViaGet.feature:51 - status code was: 500, expected: 400, response time: 62, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=+&amp;val2=+, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+[6.4:58] CommonValidationsViaGet.feature:51 - status code was: 404, expected: 400, response time: 59, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=%2B&amp;val2=%2B, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Not Found&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
+CommonValidationsViaGet.feature:70 - status code was: 200, expected: 400, response time: 51, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=6&amp;val2=8&amp;val3=7, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaGet.feature') {opURL:'#(operationURL)'} (ValidateDivisionGetAPI.feature:12)&#13;
+
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[0].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performDivision(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[1].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = testDataInput[0].operand2 ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[0].operand2) . passed
+* def operationURL = baseUrl + '/divide' .................................. passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performDivision =  function(op1,op2){return Math.floor(op1/op2) } ... passed
+Given url operationURL .................................................... passed
+And param val1 = testDataInput[1].operand1 ................................ passed
+And param val2 = 0 ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateDivisionGetAPI.feature:48 - status code was: 500, expected: 200, response time: 14, url: http://localhost:8080/qa_testCalc_java11/restWS/divide?val1=-44&amp;val2=0, response: &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; java.lang.ArithmeticException: &amp;#47; by zero&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;javax.servlet.ServletException: java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.ArithmeticException: &amp;#47; by zero&#13;
+	com.ataccama.qa.testcalc.TestCalc.divide(TestCalc.java:24)&#13;
+	com.ataccama.qa.testcalc.rest.TestCalcRest.divide(TestCalcRest.java:44)&#13;
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)&#13;
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)&#13;
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)&#13;
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)&#13;
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)&#13;
+	org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)&#13;
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)&#13;
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)&#13;
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)&#13;
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)&#13;
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)&#13;
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)&#13;
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)&#13;
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)&#13;
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)&#13;
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.61&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;&#13;
+	at ✽.Then status 200 (ValidateDivisionGetAPI.feature:48)&#13;
+
+And match $.result == performDivision(testDataInput[1].operand1,testDataInput[1].operand2) . skipped</failure>
+  </testcase>
+</testsuite>

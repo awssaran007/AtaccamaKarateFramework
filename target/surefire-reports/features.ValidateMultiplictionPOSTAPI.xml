@@ -1,0 +1,147 @@
+<testsuite failures="1" name="features/ValidateMultiplictionPOSTAPI.feature" skipped="0" tests="4" time="4.314616">
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate common scenarios for multiplication via get call" time="3.870932">
+    <failure message="ValidateMultiplictionPOSTAPI.feature:14 - &#10;CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}&#10;CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:12}&#10;[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:12}&#10;[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {&quot;result&quot;:0}">* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)</failure>
+  </testcase>
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with two int values (happy path)" time="0.148164">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[0].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with two negative values" time="0.159772">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performMultiply(testDataInput[1].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+  <testcase classname="features.ValidateMultiplictionPOSTAPI" name="Validate multiplication with ONE negative and ONE Positive value" time="0.135748">
+    <system-out>* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidateMultiplictionPOSTAPI.feature:14 - 
+CommonValidationsViaPost.feature:20 - status code was: 200, expected: 400, response time: 65, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}
+CommonValidationsViaPost.feature:30 - status code was: 200, expected: 400, response time: 10, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.1:65] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 31, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":12}
+[5.3:67] CommonValidationsViaPost.feature:61 - status code was: 200, expected: 400, response time: 15, url: http://localhost:8080/qa_testCalc_java11/restWS/compute, response: {"result":0}&#13;
+	at ✽.* call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}} (ValidateMultiplictionPOSTAPI.feature:14)&#13;
+
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[0].operand2 .............................. passed
+* print payLoad ........................................................... passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[0].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[1].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performMultiply(testDataInput[1].operand1,testDataInput[1].operand2) . passed
+* def testDataInput = read('classpath:'+'resources/InputTestData.json') ... passed
+* def performMultiply = function(op1,op2){return op1 * op2} ............... passed
+* def baseUrlCompute = baseUrl + '/compute' ............................... passed
+* def payLoad = {} ........................................................ passed
+* payLoad.operation = "mul" ............................................... passed
+Given url baseUrlCompute .................................................. passed
+And payLoad.val1 = testDataInput[0].operand1 .............................. passed
+And payLoad.val2 = testDataInput[1].operand2 .............................. passed
+And request payLoad ....................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match $.result == performMultiply(testDataInput[0].operand1,testDataInput[1].operand2) . passed</system-out>
+  </testcase>
+</testsuite>

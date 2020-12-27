@@ -11,8 +11,7 @@ Feature: Validate subtraction
 
   @common-scenarios
   Scenario: Validate common scenarios for subtraction via get call
-    * call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad)}
-
+    * call read('classpath:features/commons/CommonValidationsViaPost.feature') {payLoadReq:#(payLoad),computeURL:#(baseUrlCompute)}}
 
 
   Scenario: Validate subtraction with two int values (happy path)
