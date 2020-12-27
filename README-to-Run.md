@@ -43,3 +43,5 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 
 5. The reports are generated in the target folder eg> html report for ValidateAdditionGetAPI.feature 
 **target/surefire-reports/features.ValidateAdditionPOSTAPI.html**
+
+6. To check the issues follow - https://github.com/awssaran007/AtaccamaKarateFramework/issues
