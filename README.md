@@ -14,7 +14,8 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 
 
 1. The validation scenarios as per each operation(viz. Addition, Subtraction, Division, Multiplication) are provided in their corresponding feature file eg:
-
+   folder - [src/test/java/features/]
+   
 	**Addition via GET api - ValidateAdditionGetAPI.feature**
     
    	**Addition via POST api - ValidateAdditionPOSTAPI.feature**
@@ -22,7 +23,7 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 2. Each feature file is tagged as per it's operation eg> **@addition** for  ValidateAdditionGetAPI.feature and ValidateAdditionPOSTAPI.feature 
 
 3. There are a few scenarios which are performing the field level and structural level testing and is common for all the operations. Such scenarios are abstracted 
-   in CommonValidationsViaGet.feature and CommonValidationsViaPost.feature
+   in CommonValidationsViaGet.feature and CommonValidationsViaPost.feature [folder - src/test/java/features/commons/]
    These features are called by each main feature file e.g ValidateAdditionGetAPI.feature in the first scenario. 
    
 4. The functional scenarios specific to operation are enclosed in the corresponding feature file eg: ValidateAdditionGetAPI.feature.    
@@ -39,9 +40,9 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 ---
 ## Few guidelines to run the script-
 
-a) To run a feature file src/test/java/runner/FeatureRunner.runner file is used where the test method runs the command `Runner.path("classpath:features")`
+a) To run a feature file **src/test/java/runner/FeatureRunner.runner** file is used where the test method runs the command `Runner.path("classpath:features")`
   
-b) To run  a particular feature file-
+b) To run a particular feature file-
   
    i)using the tag, update the tag in this line -  ` Runner.path("classpath:features").tags("@addition"); `
      tags used here are @multiplication,@addition,@subtract,@division
@@ -49,7 +50,7 @@ b) To run  a particular feature file-
    ii)using the feature name, update file name in the path method - ` Runner.path("classpath:features/ValidateAdditionGetAPI.feature"); `
 
 
-c) to run from maven use command `mvn test` - it will call the feature file.
+c) To run from maven use command `mvn test` - it will call the feature file.
 
 ---
 For karate setting or quickstart guidance refer - https://www.youtube.com/watch?v=W-af7Cd8cMc&feature=youtu.be
