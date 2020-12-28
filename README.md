@@ -31,8 +31,11 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 5. The input test data is been kept in a seperate folder **src/test/java/resources/InputTestData.json** This is been used by all the feature files commonly.
 
 6. The reports are generated in the target folder eg> html report for ValidateAdditionGetAPI.feature 
+
 **target/surefire-reports/features.ValidateAdditionPOSTAPI.html**
+
 **target/surefire-reports/features.ValidateAdditionGetAPI.html**
+
 [NOTE]- the target folder is also uploaded in this repo (in case, the html report is required directly to be fetched without running the script)
 
 7. The defects raised are been shared here - https://github.com/awssaran007/AtaccamaKarateFramework/issues
