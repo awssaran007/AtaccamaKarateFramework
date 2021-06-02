@@ -1,4 +1,4 @@
-# CalculatorKarateFramework
+# CalculatorKarateAPIFramework
 This framework is based on Karate DSL which is performing testing on the REST API as provided in the application.
 
 ## Few inital guidelines -
