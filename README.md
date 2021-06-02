@@ -38,7 +38,7 @@ This framework is based on Karate DSL which is performing testing on the REST AP
 
 [NOTE]- the target folder is also uploaded in this repo (in case, the html report is required directly to be fetched without running the script)
 
-7. The defects raised are been shared here - https://github.com/awssaran007/CalculatorKarateFramework/issues
+7. The defects raised are been shared here - https://github.com/awssaran007/CalculatorKarateAPIFramework/issues
 
 ---
 ## Few guidelines to run the script-
